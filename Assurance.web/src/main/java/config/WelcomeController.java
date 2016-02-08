@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import services.HelloService;
+import services.IHelloService;
 
 /**
  * Created by Nico on 21/01/2016.
@@ -13,7 +13,7 @@ import services.HelloService;
 public class WelcomeController {
 
     @Autowired
-    private HelloService helloService;
+    private IHelloService helloService;
 
     @RequestMapping("/welcome")
     public ModelAndView index(){
